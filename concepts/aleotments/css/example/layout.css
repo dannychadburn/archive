@@ -21,7 +21,7 @@ h1 span {
   
 h1 span:before, h1 span:after {
   content:"";
-  border-top:1px solid #333;
+  border-top:1px solid #999;
   height: 0.1em;
   width: 19%;
   display: block;
@@ -31,13 +31,13 @@ h1 span:before, h1 span:after {
 h1 span:before { float: left; }  
 h1 span:after { float: right; }
 
-ul { margin-left: 0.4em; }
-ol { margin-left: 0.4em; }
+ul { margin-left: 1.6em; }
+ol { margin-left: 1.6em; }
 
 p.intro {
   font-size: 1.618em;
   line-height:1.4289em;
-  max-width: 20em;
+  max-width: 100%;
   margin-bottom: 1em;
   }
 
