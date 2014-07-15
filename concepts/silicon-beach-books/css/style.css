@@ -107,6 +107,7 @@ a:visited {
 
 #slide1 p {
 	font-size: 1.5em;
+    margin: 10px 0;
 }
 
 
@@ -133,7 +134,10 @@ a:visited {
 	font-style: oblique;
 }
 
-
+#slide2 li {
+	font-size: 1.25em;
+    margin: 10px 0;
+}
 
 
 /* Slide 3 */ 
@@ -164,7 +168,10 @@ a:visited {
 	font-weight: 400;
 }
 
-
+#slide3 li {
+	font-size: 1.25em;
+    margin: 10px 0;
+}
 
 
 /* Slide 4 */
@@ -190,7 +197,39 @@ a:visited {
 	font-style: oblique;
 }
 
+#slide4 li {
+	font-size: 1.25em;
+    margin: 10px 0;
+}
 
+
+/* Slide 5 */ 
+
+#slide5{
+	background-color:#ffffff;
+}
+#slide5 h1 {
+	font-size: 4em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#8a8683;
+	font-weight: 700;
+}
+#slide5 h2 {
+	font-size: 2em;
+	color: #BDE2DF;
+	line-height: auto;
+	padding-bottom:20px;
+	font-weight: 400;
+	font-style: oblique;
+}
+#test{
+	background-color:#bde2df;
+	color:#ffffff;
+	text-align:center;
+	font-size: 2em;
+	font-weight: 400;
+}
 
 
 
@@ -262,6 +301,12 @@ a:visited {
 #slide4 h2 {
 	line-height: 1em;
 }
+#slide5 h1 {
+	line-height: 1em;
+}
+#slide5 h2 {
+	line-height: 1em;
+}
 
 }
 
@@ -326,7 +371,12 @@ a:visited {
 #slide4 h2 {
 	line-height: 1em;
 }
-
+#slide5 h1 {
+	line-height: 1em;
+}
+#slide5 h2 {
+	line-height: 1em;
+}
 
 }
 
