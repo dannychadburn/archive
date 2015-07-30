@@ -1,9 +1,45 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title>Pie Timer</title>
+	<title>The Naughty Step | Time to Think About What You've Done</title>
 	<style type="text/css">
+        
+        html { 
+  background: url(./stairs.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+       .middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}       
+        
+        p  { color: #fff; font-family: 'Hind', sans-serif; }
+        h1 { color: #fff; font-size: 4.5em; font-family: 'Ubuntu', sans-serif; }
+        h2 { color: #fff; font-size: 1.5em; font-weight: normal; font-family: 'Hind', sans-serif; }
+        
+        a:link{color:inherit; text-decoration: none}
+        a:active{color:inherit}
+        a:visited{color:inherit}
+        a:hover{color:inherit; text-decoration: underline}
+         
+        ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+        
 	</style>
+    
+    <link href='http://fonts.googleapis.com/css?family=Hind' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script type="text/javascript" src="./jquery.pietimer.js"></script>
 	<script type="text/javascript">
@@ -12,10 +48,10 @@
 		$('.boom').hide();
 	
 		$('#demo').pietimer({
-			seconds: 10,
-			color: 'rgba(0, 0, 0, 0.8)',
-			height: 100,
-			width: 100,
+			seconds: 30,
+			color: 'rgba(255, 255, 255, 0.5)',
+			height: 180,
+			width: 180,
 					is_reversed: true
 		},
 		function(){
@@ -35,53 +71,33 @@
 	});
 	</script>
 </head>
-<body>
+<body style="text-align: center;">
 
-	<h1>Pietimer</h1>
-	<p>Pietimer injects a canvas element into the page which has an ever reducing pie shaped timer. Once the timer is complete a callback function is performed.</p>
-	<p><a href="https://github.com/knorthfield/pietimer/">Download from GitHub</a></p>
-	
-	<hr />
-				
-	<h2>Demo</h2>
-	<p><a href="#" id="start" class="btn">Start Timer</a></p>
-	<p><a href="#" id="pause" class="btn">Pause Timer</a></p>
-						
-	<p id="demo" style="height: 150px;"></p>
-						
-	<h3 class="boom">Boom!</h3>
-	<p class="boom">The timer finished.</p>
+    <div class="middle"><h1>The Naughty Step</h1>
+        <h2>Thrown a tantrum? Offended someone online?<br>Take a few seconds to think about what you've done.</h2>
+    
+    <p style="margin-top: 30px; margin-bottom: 50px;"><a href="#" id="start" class="btn" style="border-radius: 0px;
+  font-family: 'Hind', sans-serif;
+  color: #ffffff;
+  font-size: 120%;
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 2px;
+  text-decoration: none;"
+  onMouseOver="this.style.backgroundColor='#444444'"
+  onMouseOut="this.style.backgroundColor='rgba(255, 255, 255, 0.0)'">Begin</a></p>
+	<p class="boom" style="font-size: 150%;">Doesn't that feel better? Now go play nice.</p>
+    <p id="demo" style="height: 200px;"></p>
+    
 
-
-	<h2>Usage</h2>
-
-	<p>The pietimer canvas element will be injected *into* the specified element.</p>	
-	<p>$('#element').pietimer(); // Will place pietimer inside #element</p>
-	<p>Don't forget to pass some options and a callback!</p>
-
-				
-	<h2>Options</h2>
-
-<code>
-<pre>
-$('#demo').pietimer({
-    seconds: 10,
-    color: 'rgba(0, 0, 0, 0.8)',
-    height: 100,
-    width: 100
-},
-function(){
-    //Do something
-});
-$('#demo').pietimer('start');
-</pre>
-</code>
-				
-				
-	<p>Height and width will be inherited from the parent element and so are optional.</p>
-	
-	<p>Colour will accept any value that the canvas element accepts including hex values like #ffffff</p>
-
-	
+    <ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fdanny.chadburn.co.uk%2Fprojects%2Fnaughty-step%2F&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="images/simple_icons/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fdanny.chadburn.co.uk%2Fprojects%2Fnaughty-step%2F&text=:%20http%3A%2F%2Fdanny.chadburn.co.uk%2Fprojects%2Fnaughty-step%2F" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="images/simple_icons/Twitter.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdanny.chadburn.co.uk%2Fprojects%2Fnaughty-step%2F&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="images/simple_icons/Reddit.png"></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fdanny.chadburn.co.uk%2Fprojects%2Fnaughty-step%2F&title=&summary=&source=http%3A%2F%2Fdanny.chadburn.co.uk%2Fprojects%2Fnaughty-step%2F" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="images/simple_icons/LinkedIn.png"></a></li>
+  <li><a href="mailto:?subject=&body=:%20http%3A%2F%2Fdanny.chadburn.co.uk%2Fprojects%2Fnaughty-step%2F" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="images/simple_icons/Email.png"></a></li>
+</ul>
+        
+        <p>Made with ♥ by <a href="http://danny.chadburn.co.uk" target="_blank">Danny Chadburn</a></p>
+    </div>
 </body>
 </html>
