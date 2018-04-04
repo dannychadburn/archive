@@ -6,8 +6,3 @@ theme: jekyll-theme-minimal
 
 gems:
   - jekyll-mentions
-  
-  plugins:
-  - jekyll-remote-theme
-
-remote_theme: mmistakes/minimal-mistakes
