@@ -1,5 +1,3 @@
-
-
 ## Big Heading
 
 ### Welcome to GitHub Pages
